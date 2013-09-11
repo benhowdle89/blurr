@@ -36,6 +36,6 @@ document.querySelector('#submitNewUrl').addEventListener('click', function(e) {
     e.preventDefault();
     var val = document.querySelector('#newUrl').value;
     if (val) {
-        makeImage();
+        makeImage(val);
     }
 });
