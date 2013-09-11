@@ -35,6 +35,7 @@ a {
 
 p {
 	line-height: 1.65;
+	margin-bottom: 6px;
 }
 
 header {
@@ -42,7 +43,7 @@ header {
 }
 
 footer {
-	padding: 12px 0 12px 0;
+	padding: 12px 0 24px 0;
 	margin-top: 24px;
 }
 
@@ -66,6 +67,10 @@ h1 a {
 h2 {
 	margin: 12px 0;
     font-size: 18px;
+}
+
+i {
+	font-style: italic;
 }
 
 .hidden {
@@ -99,6 +104,7 @@ input[type="text"]{
 	margin-bottom: 12px;
 	background: #2980b9;
 	color: #fff;
+	margin-right: 6px;
 }
 
 .btn:hover {
