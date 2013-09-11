@@ -16,7 +16,7 @@ function applyFilter(el, amount) {
 }
 
 function makeImage(url) {
-    url = url || "http://i0.kym-cdn.com/photos/images/original/000/131/399/fry.PNG?1307468855";
+    url = url || getParam('img') || "http://i0.kym-cdn.com/photos/images/original/000/131/399/fry.PNG?1307468855";
     var img = new Image();
     img.src = url;
     img.id = 'dasImage';
@@ -24,6 +24,12 @@ function makeImage(url) {
     imgHolder.innerHTML = '';
     imgHolder.appendChild(img);
     applyFilter(img, slider.value);
+}
+
+function getParam(id){
+    var a = new RegExp(id+"=([^&#=]*)");
+    var p = a.exec(window.location.search);
+    return p ? decodeURIComponent(p[1]) : null;
 }
 
 makeImage();
