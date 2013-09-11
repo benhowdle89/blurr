@@ -16,14 +16,22 @@ function applyFilter(el, amount) {
 }
 
 function makeImage(url) {
-    url = url || "http://i0.kym-cdn.com/photos/images/original/000/131/399/fry.PNG?1307468855";
+    url = url || getParam('img') || "http://i0.kym-cdn.com/photos/images/original/000/131/399/fry.PNG?1307468855";
     var img = new Image();
     img.src = url;
     img.id = 'dasImage';
     var imgHolder = document.querySelector('#imgHolder');
     imgHolder.innerHTML = '';
     imgHolder.appendChild(img);
+    var permalink = document.querySelector('#permalink');
+    permalink.href = 'http://blurr.im?img=' + encodeURIComponent(url);
     applyFilter(img, slider.value);
+}
+
+function getParam(id){
+    var a = new RegExp(id+"=([^&#=]*)");
+    var p = a.exec(window.location.search);
+    return p ? decodeURIComponent(p[1]) : null;
 }
 
 makeImage();
