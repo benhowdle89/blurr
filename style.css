@@ -119,3 +119,7 @@ input[type="text"]{
 #newUrl {
 	margin-top: 12px;
 }
+
+.floatmeright {
+	float: right;
+}
