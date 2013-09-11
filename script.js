@@ -23,6 +23,8 @@ function makeImage(url) {
     var imgHolder = document.querySelector('#imgHolder');
     imgHolder.innerHTML = '';
     imgHolder.appendChild(img);
+    var permalink = document.querySelector('#permalink');
+    permalink.href = 'http://blurr.im?img=' + encodeURIComponent(url);
     applyFilter(img, slider.value);
 }
 
