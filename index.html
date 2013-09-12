@@ -1,51 +1,13 @@
-<!DOCTYPE html>
-<html>
-<head>
+---
+layout: default
+---
 
-  <meta name="description" content="Blurr - The internet doesn't always deserve 20/20 vision" />
-
-  <meta charset=utf-8 />
-  <title>Blurr - The internet doesn't always deserve 20/20 vision</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-
-<header>
-	<div class="wrap">
-		<h1><a href="/">Blurr <span>ಠ_ಠ</span></a></h1>
-		<div class="clearfix"></div>
-	</div>
-</header>
-
-<div class="wrap">
-	<div id="process">
-		<div id="imgHolder"></div>
-		<input id="opacity" type="range" min="1" max="30" value="0">
-		<p>unblur &rarr;</p>
-		<input type="text" placeholder="NSFW image link" id="newUrl" />
-		<a id="submitNewUrl" class="btn">Grab</a>
-		<h2 class="meta">Because the internet doesn't always deserve 20/20 vision.</h2>
-        <p><a id="permalink" href="http://blurr.im">permalink</a></p>
-	</div>
+<div id="process">
+	<div id="imgHolder"></div>
+	<input id="opacity" type="range" min="1" max="30" value="0">
+	<p>unblur &rarr;</p>
+	<input type="text" placeholder="NSFW image link" id="newUrl" />
+	<a id="submitNewUrl" class="btn">Grab</a>
+	<h2 class="meta">Because the internet doesn't always deserve 20/20 vision.</h2>
+    <p><a id="permalink" href="http://blurr.im">permalink</a></p>
 </div>
-<footer>
-	<div class="wrap">
-		<p class="tweet-link"><a href="/why.html" class="btn">Why?</a><a class="btn" href="https://twitter.com/intent/tweet?text=The internet doesn't always deserve 20/20 vision.&amp;url=http://blurr.im" target="_BLANK">Tweet &rarr;</a></p>
-		<p>Made by <a href="http://benhowdle.im">Ben Howdle</a> with words from <a href="http://www.copywritingisart.com/">Art</a><span class="floatmeright"><a href="http://www.youtube.com/watch?v=2DOzHFaNOzM">Bugs/problems/it no worky</a></span></p>
-	</div>
-</div>
-<script type="text/javascript" src="script.js"></script>
-
-<script>
-	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-	ga('create', 'UA-37224725-2', 'blurr.im');
-	ga('send', 'pageview');
-
-</script>
-
-</body>
-</html>
